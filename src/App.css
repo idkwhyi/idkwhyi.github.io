@@ -1,0 +1,83 @@
+html {
+  width: 100vw;
+  height: auto;
+  overflow-x: hidden;
+  /* overflow: hidden; */
+}
+
+/* Lora */
+@font-face {
+  font-family: Lora;
+  src: url(../src/assets/fonts/Lora/Lora-Regular.ttf);
+}
+
+.regular-lora {
+  font-family: Lora;
+}
+
+@font-face {
+  font-family: LoraBold;
+  src: url(../src/assets//fonts/Lora/Lora-Bold.ttf);
+}
+
+.bold-lora {
+  font-family: LoraBold;
+}
+
+/* Plus Jakarta Sans */
+@font-face {
+  font-family: PlusJakartaSansRegular;
+  src: url(../src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Regular.ttf);
+}
+
+.regular-plusJakartaSans {
+  font-family: PlusJakartaSansRegular;
+}
+
+@font-face {
+  font-family: PlusJakartaBold;
+  src: url(../src/assets/fonts/PlusJakartaSans/PlusJakartaSans-Bold.ttf);
+}
+
+.bold-plusJakartaSans {
+  font-family: PlusJakartaBold;
+}
+
+
+/* Rocoleta */
+@font-face {
+  font-family: Rocoleta;
+  src: url(../src/assets/fonts/Rocoleta/Recoleta-Regular.ttf);
+}
+
+.regular-rocoleta {
+  font-family: Rocoleta;
+}
+
+@font-face {
+  font-family: RocoletaBold;
+  src: url(../src/assets/fonts/Rocoleta/Recoleta-Bold.ttf);
+}
+
+.bold-rocoleta {
+  font-family: RocoletaBold;
+}
+
+.hiddenElement {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.showHiddenElement {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion){
+  .hiddenElement {
+    transition: none;
+  }
+}

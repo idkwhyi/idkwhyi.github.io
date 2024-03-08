@@ -1,0 +1,43 @@
+.images {
+  max-width: 30rem;
+  max-height: 40rem;
+}
+
+.closeButton {
+  margin-top: 3rem;
+  margin-right: 2vw;
+}
+
+.images-after-clicked {
+  max-width: 90vw;
+  height: 80vh;
+}
+
+.images-element {
+  max-width: 64rem;
+  max-height: 100%;
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .images-after-clicked{
+    width: 100vw;
+    height: auto;
+  }
+
+  .images-element {
+    max-width: 90vw;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+  .images-after-clicked{
+    width: 100vw;
+    height: auto;
+  }
+
+  .images-element {
+    max-width: 90vw;
+    height: auto;
+  }
+}

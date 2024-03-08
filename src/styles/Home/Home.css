@@ -1,0 +1,74 @@
+.h1 {
+  font-size: 60px;
+  line-height: normal;
+}
+
+.h2 {
+  font-size: 45px;
+}
+
+.h3 {
+  font-size: 30px;
+}
+
+.h4 {
+  font-size: 25px;
+}
+
+.desc {
+  font-size: 16px;
+}
+
+.bento-border {
+  border: 3px solid black;
+  border-radius: 56px;
+}
+.bento-border-transparent {
+  border: 3px solid transparent;
+  border-radius: 56px;
+}
+
+
+/* 
+RESPONSIVE TASK: 
+font size
+margin of nav bg
+
+*/
+
+/* SMALLER THAN MOBILE */
+@media screen and (min-width: 0px) and (max-width: 200px) {
+  
+}
+/* MOBILE */
+@media screen and (min-width: 300px) and (max-width: 480px){
+  .h1 {
+    font-size: 40px;
+  }
+  
+  .h2 {
+    font-size: 35px;
+  }
+  
+  .h3 {
+    font-size: 30px;
+  }
+  
+  .h4 {
+    font-size: 25px;
+  }
+  
+  .desc {
+    font-size: 16px;
+  }
+}
+/* TAB */
+@media screen and (min-width: 600px) and (max-width: 1280){
+  
+}
+/* BIGGER THAN DESKTOP */
+/* @media screen and (min-width: 1281px){
+  .listFontSize {
+    font-size: 5.5rem;
+  }
+} */

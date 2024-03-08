@@ -1,0 +1,200 @@
+/* 
+mobile : 320-480
+tab ; 600 1024
+desktop : 1024 1920 (MY DEFAULT STYLE BASED ON THIS)
+*/
+
+/* .navbar-main-container { */
+  /* background-color: #c2d6f2; */
+  /* width: 100vw;
+  height: 60vh; */
+/* } */
+
+.navButton {
+  top: 3rem;
+  right: 2vw;
+}
+
+.navBgContainer {
+  width: calc(100vw + 20vw);
+  height: 60vh;
+  top: -8vh;
+  left: -3vw;
+  transition: background-color 0.1s ease;
+}
+
+.homeBg {
+  background-color: #fadce4;
+}
+
+.galleryBg {
+  background-color: #c2d6f2;
+}
+
+.openNavbar {
+  margin-top: 0;
+  transition: margin .7s ease-in-out .0s;
+}
+
+.closeNavbar {
+  margin-top: -42rem;
+  transition: margin .7s ease-in-out .2s;
+}
+
+/* NAV LIST */
+.listFontSize {
+  font-size: 5.5rem;
+}
+
+.defaultListStyle {
+  opacity: 0;
+  margin-left: -2rem;
+  display: none;
+}
+
+.openNavList {
+  /* display: block; */
+  opacity: 0;
+  margin-left: -2rem;
+  animation: openList .5s ease-in-out forwards;
+  /* transition: margin 0.3 ease; */
+}
+
+.closeNavList {
+  /* display: none; */
+  opacity: 1;
+  margin-left: 0rem;
+  animation: closeList .5s ease-in-out forwards;
+}
+
+.navListHover {
+  padding-left: 0rem;
+}
+
+.navListHover:hover {
+  padding-left: 2rem;
+  animation-name: listHoverOpenEffect;
+  animation-duration: 0.3s; 
+  animation-timing-function: ease-in-out;
+}
+
+.navListContainer {
+  padding-inline-start: 5rem;
+}
+
+.navListContainer > .navListOpenDelay:nth-child(1) {
+  animation-delay: .36s;
+}
+
+.navListContainer > .navListOpenDelay:nth-child(2) {
+  animation-delay: .45s;
+}
+
+.navListContainer > .navListCloseDelay:nth-child(1) {
+  animation-delay: .2s;
+}
+
+.navListContainer > .navListCloseDelay:nth-child(2) {
+  animation-delay: .0s;
+}
+
+
+/* KEYFRAME ANIMATION */
+@keyframes openList {
+  0% {
+    display: block;
+    opacity: 0;
+    margin-left: -2rem;
+  }
+  50% {
+    opacity: 1;
+    margin-left: .6rem;
+  }
+  100% {
+    opacity: 1;
+    margin-left: 0rem;
+  }
+}
+
+@keyframes closeList {
+  0% {
+    opacity: 1;
+    margin-left: 0rem;
+  }
+  30% {
+    opacity: .5;
+    margin-left: .6rem;
+  }
+  80% {
+    opacity: 0;
+    margin-left: -2rem;
+  } 
+  100% {
+    opacity: 0;
+    margin-left: -2rem;
+    display: none;
+  }
+}
+
+@keyframes listHoverOpenEffect {
+  0% {
+    padding-left: 0rem;
+  }
+  50% {
+    padding-left: 2.5rem; 
+  }
+  100% {
+    padding-left: 2rem;
+  }
+}
+@keyframes listHoverCloseEffect {
+  0% {
+    padding-left: 2rem;
+  }
+  50% {
+    padding-left: -.3rem;
+  }
+  100%{
+    padding-left: 0rem;
+  }
+}
+
+
+/* 
+RESPONSIVE TASK: 
+font size
+margin of nav bg
+
+*/
+
+/* SMALLER THAN MOBILE */
+@media screen and (min-width: 0px) and (max-width: 200px) {
+  .listFontSize {
+    font-size: 15vw;
+  }
+}
+/* MOBILE */
+@media screen and (min-width: 300px) and (max-width: 480px){
+  .navListContainer {
+    padding-inline-start: 2.5rem;
+  }
+  .listFontSize {
+    font-size: 15vw;
+  }
+}
+/* TAB */
+@media screen and (min-width: 600px) and (max-width: 1280){
+  
+  .navBgContainer {
+    top: calc(-5vh);
+  }
+  .listFontSize {
+    font-size: 4.5rem;
+  }
+}
+/* BIGGER THAN DESKTOP */
+/* @media screen and (min-width: 1281px){
+  .listFontSize {
+    font-size: 5.5rem;
+  }
+} */

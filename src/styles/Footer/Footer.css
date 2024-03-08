@@ -1,0 +1,127 @@
+.footer-container {
+  width: 100vw;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  padding-inline: 8rem;
+  gap: 13rem;
+}
+
+/* .hover-list {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.hover-list:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+  z-index: 1;
+
+}
+
+.hover-list:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+} */
+
+.hover-email {
+  padding: 0 10px;
+  line-height: 1.4em;
+  border-radius: 0px;
+  background: radial-gradient(farthest-side, #00000000 98%, #ffffff00) -1.4em 0/1.4em 1.4em,
+    linear-gradient(90deg, #000 calc(100% - 0.7em), #0000 0) left/0% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.hover-email:hover {
+  color: #fff;
+  background-size: 1.4em 1.4em, 100% 100%;
+  background-position: right, left;
+}
+
+.hover-list {
+  padding: 0 10px;
+  line-height: 1.4em;
+  border-radius: 0px;
+  background: radial-gradient(farthest-side, #000 98%, #0000) -1.4em 0/1.4em 1.4em,
+    linear-gradient(90deg, #000 calc(100% - 0.7em), #0000 0) left/0% 100%;
+  background-repeat: no-repeat;
+  transition: 0.3s;
+}
+.hover-list:hover {
+  color: #fff;
+  background-size: 1.4em 1.4em, 100% 100%;
+  background-position: right, left;
+}
+
+.email-container {
+  width: 100%;
+  height: fit-content;
+}
+
+.get-in-touch {
+  font-size: 7vw;
+  line-height: 1;
+}
+
+.social-container {
+  width: fit-content;
+  height: 100%;
+  gap: 6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+@media screen and (min-width: 300px) and (max-width: 480px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 1rem;
+    align-items: end;
+  }
+  .email-container {
+    width: 90vw;
+    height: auto;
+    gap: 10px;
+  }
+  .get-in-touch {
+    font-size: 10vw;
+  }
+  .social-container {
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2.5rem;
+    align-items: end;
+  }
+  .email-container {
+    width: 90vw;
+    height: auto;
+    gap: 10px;
+  }
+  .get-in-touch {
+    font-size: 10vw;
+  }
+  .social-container {
+    align-items: flex-start;
+  }
+}
